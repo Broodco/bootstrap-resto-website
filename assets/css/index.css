@@ -11,11 +11,16 @@
 
 body {
   min-width: 350px;
+  background: #daddd8;
 }
 
 .navbar .navbar-brand {
   color: #6b0f1a;
   transform: scale(1.5);
+}
+
+main {
+  background: #daddd8;
 }
 
 .nav-link:hover {
@@ -26,31 +31,83 @@ body {
   color: #6b0f1a !important;
 }
 
+#brassName {
+  height: 0;
+  width: 11.1em;
+}
+
+#resto-name {
+  position: relative;
+  top: 150px;
+  left: 1em;
+  text-align: center;
+  background: white;
+  color: #6b0f1a !important;
+  width: 11.2em !important;
+  padding: 0 0.2em;
+  font-family: "Minion Pro";
+  font-size: 3em;
+  border: 2px solid #697a21;
+  color: #daddd8;
+}
+
 .jumbotron {
   background: url("../img/hop-vines-409870_1920.jpg") no-repeat center center;
   background-size: 100% auto;
   height: 180px;
-  margin-bottom: 3em;
-}
-.jumbotron #resto-name {
-  position: absolute;
-  top: 200px;
-  background: white;
-  color: #6b0f1a !important;
-  width: auto;
-  padding: 0 0.2em;
-  font-family: "Minion Pro";
-  font-size: 3em;
-  color: #daddd8;
+  margin-bottom: 0;
 }
 
-h1 {
+h1, h2 {
   font-family: "Minion Pro";
 }
 @media only screen and (max-width: 768px) {
-  h1 {
+  h1, h2 {
     font-size: 2em !important;
   }
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  text-align: justify;
+}
+
+.fab {
+  cursor: pointer;
+  background: #c7d59f;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 3rem;
+}
+.fab:hover {
+  transform: scale(1.1);
+}
+
+#mainCont {
+  padding-bottom: 0px;
+  padding-top: 3em;
+  background: white;
+}
+
+.page-footer {
+  position: static;
+  bottom: 0;
+  padding: 0 !important;
+}
+.page-footer .container {
+  background: white;
+  padding-bottom: 10px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
 }
 
 /*# sourceMappingURL=index.css.map */

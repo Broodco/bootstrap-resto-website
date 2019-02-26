@@ -3,12 +3,12 @@
     font-family: "Minion Pro";
     src: url("../fonts/minion-pro/MinionPro.otf");
 }
-
 *{
     font-family: Helvetica, Arial, sans-serif;
 }
 body{
     min-width:350px;
+    background: $color1;
 }
 
 .navbar{
@@ -16,6 +16,9 @@ body{
         color : $color5;
         transform : scale(1.5);
     }
+}
+main{
+    background:$color1;
 }
 .nav-link:hover{
     color : $color5 !important;
@@ -25,27 +28,69 @@ body{
         color : $color5 !important;
     }
 }
-
+#brassName {
+    height:0;
+    width:11.1em;
+}
+#resto-name{
+    position : relative;
+    top : 150px;
+    left : 1em;
+    text-align: center;
+    background: white;
+    color : $color5 !important;
+    width:11.2em !important;
+    padding : 0 0.2em;
+    font-family: 'Minion Pro';
+    font-size:3em;
+    border: 2px solid $color3;
+    color : $color1;
+}
 .jumbotron {
     background: url('../img/hop-vines-409870_1920.jpg') no-repeat center center; 
     background-size: 100%  auto;
     height: 180px;
-    margin-bottom:3em;
-    #resto-name{
-        position : absolute;
-        top : 200px;
-        background: white;
-        color : $color5 !important;
-        width : auto;
-        padding : 0 0.2em;
-        font-family: 'Minion Pro';
-        font-size:3em;
-        color : $color1;
-    }
+    margin-bottom:0;
 }
-h1{
+h1,h2{
     font-family: 'Minion Pro';
     @media only screen and(max-width:768px){
         font-size:2em !important;
     }
+}
+h2{
+    font-size:2rem;
+}
+p{
+    text-align: justify;
+}
+.fab{
+    cursor: pointer;
+    background:$color2;
+    padding : 1rem;
+    border-radius: 50%;
+    width:3rem;
+    &:hover{
+        transform:scale(1.1)
+    }
+}
+#mainCont{
+    padding-bottom: 0px;
+    padding-top:3em;
+    background: white;
+}
+.page-footer{
+    position:static;
+    bottom:0;
+    padding:0 !important;
+    .container{
+        background:white;
+        padding-bottom:10px;
+    }
+}
+ul{
+    padding-left : 0;
+}
+li{
+    list-style: none;
 }

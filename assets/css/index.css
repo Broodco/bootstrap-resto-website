@@ -1,0 +1,56 @@
+/* Coolors Exported Palette - coolors.co/daddd8-c7d59f-697a21-638d09-6b0f1a */
+/* HSL */
+/* RGB */
+@font-face {
+  font-family: "Minion Pro";
+  src: url("../fonts/minion-pro/MinionPro.otf");
+}
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  min-width: 350px;
+}
+
+.navbar .navbar-brand {
+  color: #6b0f1a;
+  transform: scale(1.5);
+}
+
+.nav-link:hover {
+  color: #6b0f1a !important;
+}
+
+.active .nav-link {
+  color: #6b0f1a !important;
+}
+
+.jumbotron {
+  background: url("../img/hop-vines-409870_1920.jpg") no-repeat center center;
+  background-size: 100% auto;
+  height: 180px;
+  margin-bottom: 3em;
+}
+.jumbotron #resto-name {
+  position: absolute;
+  top: 200px;
+  background: white;
+  color: #6b0f1a !important;
+  width: auto;
+  padding: 0 0.2em;
+  font-family: "Minion Pro";
+  font-size: 3em;
+  color: #daddd8;
+}
+
+h1 {
+  font-family: "Minion Pro";
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em !important;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

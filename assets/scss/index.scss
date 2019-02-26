@@ -1,4 +1,51 @@
+@import 'palette';
+@font-face {
+    font-family: "Minion Pro";
+    src: url("../fonts/minion-pro/MinionPro.otf");
+}
+
+*{
+    font-family: Helvetica, Arial, sans-serif;
+}
+body{
+    min-width:350px;
+}
+
+.navbar{
+    .navbar-brand {
+        color : $color5;
+        transform : scale(1.5);
+    }
+}
+.nav-link:hover{
+    color : $color5 !important;
+}
+.active{ 
+    .nav-link{
+        color : $color5 !important;
+    }
+}
+
 .jumbotron {
-    background-image: url("../img/jumbotron_bg.jpg");
-    background-size: cover;
+    background: url('../img/hop-vines-409870_1920.jpg') no-repeat center center; 
+    background-size: 100%  auto;
+    height: 180px;
+    margin-bottom:3em;
+    #resto-name{
+        position : absolute;
+        top : 200px;
+        background: white;
+        color : $color5 !important;
+        width : auto;
+        padding : 0 0.2em;
+        font-family: 'Minion Pro';
+        font-size:3em;
+        color : $color1;
+    }
+}
+h1{
+    font-family: 'Minion Pro';
+    @media only screen and(max-width:768px){
+        font-size:2em !important;
+    }
 }

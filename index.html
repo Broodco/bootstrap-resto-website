@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/index.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
-    <script src="../assets/js/index.js"></script>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
+    <script src="./assets/js/index.js"></script>
     <title>Accueil</title>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background: #daddda;">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/img/hop-3987576.svg" width="30" height="30" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,13 +39,63 @@
                 </li>
             </ul>
         </div>
-        <a class="navbar-brand navbar-expand-" href="#">IPA's Bistro</a>
     </nav>
-
-
-
-
-<!-- Bootstrap Scripts -->
+    <!-- Main Content -->
+    <main>
+        <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+            <div id="brassName">
+                <h1 class="display-3" id="resto-name">L'Atelier du Houblon</h1>
+            </div>
+        </div>
+        <!-- History -->
+        <div class="container px-lg-5" id="hist">
+            <div class="row">
+                <div class="col-sm py-1 px-5">
+                    <h1 class='display-4 text-center'>Notre Brasserie</h1>
+                </div>
+            </div>
+            <div class="row py-4 mx-lg-n5">
+                <div class="col-sm px-lg-5">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum esse atque fugit aliquid facere, voluptatum inventore ab vitae cum quis quam qui nesciunt nisi dolor quia eveniet doloribus id? Animi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error officiis magni expedita non veritatis ipsum, debitis ex quos, soluta quaerat nam, eum quod. Repellendus non asperiores aspernatur dolore unde quibusdam?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fugit, praesentium amet labore in, facilis illum dolores tempora veniam temporibus quod ex, enim ipsam excepturi! Voluptates aspernatur eveniet similique aut.</p>
+                </div>
+                <div class="col-sm px-lg-5">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam necessitatibus repellendus perferendis dicta, ipsam quis cum dignissimos facilis similique, mollitia odit praesentium, dolorum sequi quo consectetur hic omnis veniam qui.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, atque vel. Quos, quibusdam. Mollitia commodi voluptates cupiditate a voluptatibus! Magni aliquam necessitatibus corrupti nisi officia doloribus aperiam iusto placeat officiis!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo laborum ad magni, nesciunt odio ipsa libero natus nulla pariatur maiores omnis sed corrupti. Quas eveniet doloribus sapiente dicta, modi necessitatibus.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class='page-footer font-small py-2'>
+        <div class="container">
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1 px-2">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1 px-2">
+                        <i class="fab fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-pin mx-1 px-2">
+                        <i class="fab fa-pinterest"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-insta mx-1 px-2">
+                        <i class="fab fa-instagram"> </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

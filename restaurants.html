@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
     <script src="./assets/js/script.js"></script>
-    <title>Accueil</title>
+    <script src="./assets/js/mapBC.js"></script>
+    <script src="./assets/js/mapChar.js"></script>
+    <!-- <script src="./assets/js/mapChine.js"></script> -->
+    <title>Nos Restaurants</title>
 </head>
 <body>
     <!-- Navbar -->
@@ -23,25 +26,26 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Accueil</a>
+                        <a class="nav-link" href="./index.html">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Menu</a>
+                    <a class="nav-link" href="./menu.html">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Photos</a>
+                    <a class="nav-link" href="./photos.html">Photos</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link active" href="./restaurants.html">Restaurants<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Restaurants<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="./contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- Main Content -->
     <main>
+        
         <div id="brassName">
             <h1 class=" shadow-sm display-3" id="resto-name">L'Atelier du Houblon</h1>
         </div>
@@ -49,7 +53,76 @@
         <div class="jumbotron jumbotron-fluid">
         </div>
         <!-- mainContent -->
-        
+        <div class="container px-lg-5" id="mainCont">
+            <div class="row">
+                <div class="col-sm-12 col-lg-4">
+                        <h2 class='lead text-center'>Brasserie du Centre</h2>
+                    <h3>Adresse</h3>
+                    <ul>
+                        <li>Rue Cantersteen 12</li>
+                        <li>1000 - Bruxelles</li>
+                    </ul>
+                    <h4>Horaires d'ouverture</h4>
+                    <ul>
+                        <li>Fermé le lundi</li>
+                        <li>Mar - Sam | 11h30 - 23h00</li>
+                        <li>Dim | 11h30 - 15h00</li>
+                    </ul>
+                    <h4>Contact</h4>
+                    <p>Téléphone | 0123/4567</p>
+                    <p>Mail | <a href="broodcoorens.maxime@gmail.com">leHoublon_BCentral@gmail.com</a></p>
+                    <h4></h4>
+                    <span class="metadata-marker" style="display: none;" data-region_tag="html-body"></span>
+                    <script>
+                        
+                    </script>
+                    <div class="map" id="mapCent">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <h2 class='lead text-center'>Brasserie du Centre</h2>
+                    <h3>Adresse</h3>
+                    <ul>
+                        <li>Rue Cantersteen 12</li>
+                        <li>1000 - Bruxelles</li>
+                    </ul>
+                    <h4>Horaires d'ouverture</h4>
+                    <ul>
+                        <li>Fermé le lundi</li>
+                        <li>Mar - Sam | 11h30 - 23h00</li>
+                        <li>Dim | 11h30 - 15h00</li>
+                    </ul>
+                    <h4>Contact</h4>
+                    <p>Téléphone | 0123/4567</p>
+                    <p>Mail | <a href="broodcoorens.maxime@gmail.com">leHoublon_Carolo@gmail.com</a></p>
+                    <h4></h4>
+                    <div class="map" id="mapChar">
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <h2 class='lead text-center'>Brasserie du Centre</h2>
+                    <h3>Adresse</h3>
+                    <ul>
+                        <li>Rue Cantersteen 12</li>
+                        <li>1000 - Bruxelles</li>
+                    </ul>
+                    <h4>Horaires d'ouverture</h4>
+                    <ul>
+                        <li>Fermé le lundi</li>
+                        <li>Mar - Sam | 11h30 - 23h00</li>
+                        <li>Dim | 11h30 - 15h00</li>
+                    </ul>
+                    <p class='lead'>Contact</p>
+                    <p>Téléphone | 0123/4567</p>
+                    <p>Mail | <a href="broodcoorens.maxime@gmail.com">leHoublon_chine@gmail.com</a></p>
+                    <h4></h4>
+                    <div class="map" id="mapChin">
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class='page-footer container font-small py-2'>
         <ul class="list-unstyled list-inline text-center">
@@ -75,6 +148,8 @@
             </li>
         </ul>
     </footer>
+    <!-- Google Maps Scripts-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCttpOBey7_VMnjcA_01TpE837OJLuq3bc&callback=initMap" async defer></script>
     <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

@@ -58,11 +58,11 @@ main {
   margin-bottom: 0;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
   font-family: "Minion Pro";
 }
 @media only screen and (max-width: 768px) {
-  h1, h2 {
+  h1, h2, h3, h4 {
     font-size: 2em !important;
   }
 }
@@ -103,11 +103,21 @@ p {
 }
 
 ul {
+  margin-bottom: 0;
   padding-left: 0;
 }
 
 li {
   list-style: none;
+}
+
+.menu {
+  text-align: center;
+}
+.menu .title {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=index.css.map */

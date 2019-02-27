@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <title>Gallerie</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background: #daddda;">
+            <a class="navbar-brand" href="#">
+                <img class='img-responsive' src="./assets/img/hop-3987576.svg" width="30" height="30" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                        <a class="nav-link" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Photos<span class="sr-only">(current)</span>   </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Restaurants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <div id="brassName">
+            <h1 class=" shadow-sm display-3" id="resto-name">L'Atelier du Houblon</h1>
+        </div>
+        <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+        </div>
+        <!-- Photo Gallery -->
+        <div class="container px-lg-5 gallery-container" id="mainCont">
+            <h2 class='display-4 text-center'>Gallerie</h2>
+            <div class="tz-gallery">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 photos">
+                        <a href="./assets/img/beer-2695358_1920.jpg" class="lightbox">
+                            <img class='img-responsive' src="./assets/img/beer-2695358_1920.jpg" alt="Bière" srcset="">
+                        </a>
+                        <a href="./assets/img/burgers-1976198_1920.jpg" class="lightbox">
+                            <img class='img-responsive' src="./assets/img/burgers-1976198_1920.jpg" alt="Burger" srcset="">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 photos">
+                        <a href="./assets/img/chicken-2030706_1920.jpg" class="lightbox">
+                            <img class='img-responsive' src="./assets/img/chicken-2030706_1920.jpg" alt="Poulet" srcset="">
+                        </a>
+                        <a href="./assets/img/food-2902520_1920.jpg" class="lightbox">
+                            <img class='img-responsive' src="./assets/img/food-2902520_1920.jpg" alt="" srcset="">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 photos">
+                        <a href="./assets/img/casey-lee-105763-unsplash.jpg" class="lightbox">
+                            <img class='img-responsive' src="./assets/img/casey-lee-105763-unsplash.jpg" alt="" srcset="">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 photos">
+                        <a href="./assets/img/risotto-1126412_1920.jpg" class="lightbox">
+                            <img class='img-responsive' src="./assets/img/risotto-1126412_1920.jpg" alt="" srcset="">
+                        </a>
+                        <a href="./assets/img/risotto-1126412_1920.jpg" class="lightbox">
+                            <img class='img-responsive' src="./assets/img/salad-1786327_1920.jpg" alt="" srcset="">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 photos">
+                        <a href="./assets/img/ice-cream-sundae-100787_1920.jpg" class="lightbox">
+                            <img class='img-responsive' src="./assets/img/ice-cream-sundae-100787_1920.jpg" alt="" srcset="">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 photos">
+                        <a href="./assets/img/risotto-1126412_1920.jpg" class="lightbox">
+                            <img class='img-responsive' src="./assets/img/food-2940348_1920.jpg" alt="" srcset="">
+                        </a>
+                        <a href="./assets/img/risotto-1126412_1920.jpg" class="lightbox">
+                            <img class='img-responsive' src="./assets/img/gourmet-749562_1280.jpg" alt="" srcset="">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 photos">
+                        <a href="./assets/img/risotto-1126412_1920.jpg" class="lightbox">
+                            <img class='img-responsive' src="./assets/img/cheese-tray-1433504_1920.jpg" alt="" srcset="">
+                        </a>
+                        <a href="./assets/img/risotto-1126412_1920.jpg" class="lightbox">
+                            <img class='img-responsive' src="./assets/img/dish-601579_1920.jpg" alt="" srcset="">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 photos">
+                        <a href="./assets/img/pie-2721003_1920.jpg" class="lightbox">
+                            <img class='img-responsive' src="./assets/img/pie-2721003_1920.jpg" alt="" srcset="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class='page-footer container font-small py-2'>
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1 px-2">
+                    <i class="fab fa-facebook-f"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1 px-2">
+                    <i class="fab fa-twitter"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-pin mx-1 px-2">
+                    <i class="fab fa-pinterest"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-insta mx-1 px-2">
+                    <i class="fab fa-instagram"> </i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

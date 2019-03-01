@@ -38,6 +38,11 @@ p {
   text-align: justify;
 }
 
+.underlined {
+  text-decoration: underline;
+  margin-bottom: 0.5em;
+}
+
 .navbar .navbar-brand {
   color: #6b0f1a;
   transform: scale(1.5);
@@ -125,6 +130,25 @@ p {
   .gallery-container {
     border-radius: 0;
   }
+}
+
+#rest h4 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #638d09;
+}
+#rest ul {
+  padding-left: 0;
+  margin-left: 0;
+  border: 1px solid #c7d59f;
+}
+#rest ul li {
+  list-style: none;
+  text-align: center;
+  padding: none;
+}
+#rest p {
+  text-align: center;
 }
 
 .map {

@@ -30,6 +30,10 @@ h2{
 p{
     text-align: justify;
 }
+.underlined{
+    text-decoration: underline;
+    margin-bottom : 0.5em;
+}
 // Navbar styling
 .navbar{
     .navbar-brand {
@@ -125,6 +129,27 @@ p{
         border-radius:0;
     }
 }
+// Restaurants
+#rest{
+    h4{
+        font-size:1.5em;
+        text-align: center;
+        color: $color4;
+    }
+    ul{
+        padding-left:0;
+        margin-left:0;
+        border: 1px solid $color2;
+        li{
+            list-style: none;
+            text-align: center;
+            padding:none;
+        }
+    }
+    p{
+        text-align: center;
+    }
+}
 // Map
 .map{
     background-color: green;
@@ -137,7 +162,6 @@ iframe{
     height : 300px;
     overflow:hidden;
 }
-
 // Footer
 .page-footer{
     position:static;

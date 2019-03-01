@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Charleroi Google Maps</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        body{
+            width : 100%;
+            overflow: hidden;
+            margin:0;
+            padding:0;
+        }
+    </style>
+</head>
+<body>
+    <span class="metadata-marker" style="display: none;" data-region_tag="html-body"></span>
+    <div class="map" id="mapChar"></div>
+    <script>
+        function initMap() {
+            // The location of Charleroi
+            let Charleroi = {lat: 50.405344, lng:4.441206};
+            // The map, centered at Charleroi
+            let map = new google.maps.Map(
+                document.querySelector('#mapChar'), {zoom: 16, center: Charleroi});
+            // The marker, positioned at Charleroi
+            let marker = new google.maps.Marker({position: Charleroi, map: map});
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCttpOBey7_VMnjcA_01TpE837OJLuq3bc&callback=initMap" async defer></script>
+</body>
+</html>

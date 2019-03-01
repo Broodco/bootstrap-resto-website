@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gent Google Maps</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        body{
+            width : 100%;
+            overflow: hidden;
+            margin:0;
+            padding:0;
+        }
+    </style>
+</head>
+<body>
+    <span class="metadata-marker" style="display: none;" data-region_tag="html-body"></span>
+    <div class="map" id="mapGent"></div>
+    <script>
+        function initMap() {
+            // The location of Gent
+            let Gent = {lat: 51.036613, lng:3.713557};
+            // The map, centered at Gent
+            let map = new google.maps.Map(
+                document.querySelector('#mapGent'), {zoom: 16, center: Gent});
+            // The marker, positioned at Gent
+            let marker = new google.maps.Marker({position: Gent, map: map});
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCttpOBey7_VMnjcA_01TpE837OJLuq3bc&callback=initMap" async defer></script>
+</body>
+</html>

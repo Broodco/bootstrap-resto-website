@@ -164,6 +164,16 @@ iframe {
   overflow: hidden;
 }
 
+.form-control::placeholder {
+  color: #c7d59f;
+  opacity: 1;
+}
+
+.btn {
+  border-color: #638d09;
+  color: #638d09;
+}
+
 .page-footer {
   position: static;
   width: 100%;

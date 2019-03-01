@@ -162,6 +162,15 @@ iframe{
     height : 300px;
     overflow:hidden;
 }
+// Contact
+.form-control::placeholder{
+    color:$color2;
+    opacity:1;
+}
+.btn{
+    border-color: $color4;
+    color: $color4;
+}
 // Footer
 .page-footer{
     position:static;

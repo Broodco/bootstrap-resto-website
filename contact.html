@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
     <script src="./assets/js/script.js"></script>
-    <title>Accueil</title>
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/>
+    <title>Contact</title>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background: #daddda;">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/img/hop-3987576.svg" width="30" height="30" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Accueil<span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="#">
+            <img src="./assets/img/hop-3987576.svg" width="30" height="30" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Accueil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./menu.html">Menu</a>
@@ -34,8 +35,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./restaurants.html">Restaurants</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./contact.html">Contact<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -50,9 +51,39 @@
         </div>
         <!-- mainContent -->
         <div class="container px-lg-5" id="mainCont">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-sm-12 col-md-6">
+                        <label for="formName">Nom</label>
+                        <input type="text" class="form-control" id="formName" placeholder="Votre Nom" required/>
+                    </div>
+                    <div class="form-group col-sm-12 col-md-6">
+                        <label for="formSurname">Prénom</label>
+                        <input type="text" class="form-control" id="formSurname" placeholder="Votre Prénom" required/>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-sm-12 col-md-4">
+                        <label for="formSelect">Objet</label>
+                        <select class="form-control" id="formSelect">
+                            <option>Réservation</option>
+                            <option>Question</option>
+                            <option>Suggestion</option>
+                            <option>Truc en 'tion</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-12 col-md-8">
+                        <label for="formMail">E-Mail</label>
+                        <input type="email" class="form-control" id="formMail" placeholder="Votre Adresse Mail" required>
+                    </div>
 
-
-            
+                </div>
+                <div class="form-group">
+                    <label for="formTextArea">Votre message</label>
+                    <textarea class="form-control" id="formTextArea" rows="3" required></textarea>
+                </div>
+                <button class="btn" type="submit">Envoyer</button>
+            </form>
         </div>
     </main>
     <footer class='page-footer container font-small py-2'>

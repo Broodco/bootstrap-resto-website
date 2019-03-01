@@ -151,6 +151,12 @@ p {
   text-align: center;
 }
 
+.horaire {
+  border: 1px solid #c7d59f;
+  padding: 0.2em;
+  text-align: justify;
+}
+
 .map {
   background-color: green;
   width: 100%;

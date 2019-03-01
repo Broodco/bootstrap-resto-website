@@ -1,5 +1,5 @@
 {
-    "name": "Houblon",
+    "name": "Atelier du Houblon",
     "short_name": "Houblon",
     "icons": [
         {
@@ -15,5 +15,6 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "start_url": "index.html"
 }
